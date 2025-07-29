@@ -24,3 +24,7 @@ df = df.sample(frac=1).reset_index(drop=True)
 df.to_csv("password_data.csv", index=False)
 
 print("✅ password_data.csv created.")
+
+
+from google.colab import files
+files.download("password_data.csv")
